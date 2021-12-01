@@ -2,10 +2,6 @@
 
 Aufbauend auf der Vision &amp; Konzept, sowie eines "minimal viable product" vorangegangener Semester, soll in diesem Projekt eine Auswertung bzw. Verwertung stattfinden. Dabei kann die Auswertung bzw. Verwertung verschiedenes umfassen, wie eine Evaluation, Weiterentwicklung in Richtung Produktreife, Hinarbeiten auf eine Forschungsveröffentlichung oder für die Open Source Community.  Das Projekt besteht aus zwei Teilen: Einem Projektanteil (6 CP) der vom jeweiligen Projectowner geleitet wird und einem Vertiefungsworkshop (6 CP), der zu Beginn des Semesters in Absprache mit dem Projectowner gewählt wird (nähere Informationen finden sich auch weiter unten im jeweiligen Semesterordner).
 
-# Projekt III: Cranach Cross-Fade (CCF)
-<!-- TODO: Noch mal überarbeiten vor dem PR -->
-*Cranach Cross Fade* (CCF) ist ein Modul, das für den Einsatz im [Cranach Digital Archive (CDA)](https://lucascranach.org/home) entworfen und entwickelt wurde. Es ermöglicht einen neuen Weg, mehrere Bildaufnahmen zu vergleichen. Dafür können beliebig viele Aufnahmeebenen übereinandergelegt und unterschiedlich transparent eingestellt werden. So können Expert:innen kleine Unterschiede gut erkennen und sorgen so gegebenenfalls für neue Erkenntnissen über die Historie der Werke.
-
 -----------------
 
 **Inhaltsübersicht**
