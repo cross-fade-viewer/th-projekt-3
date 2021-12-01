@@ -44,9 +44,7 @@ docker compose up
 Möchtest du an dem Projekt mitwirken, empfehlen wir dir Kontakt zum [Projektteam](#das-team) aufzunehmen. Alle benötigen Anleitungen und Beschreibungen der Standards, auf die wir uns im Team geeinigt haben, findest du im  [/docs](./docs/README.md) Verzeichnis.
 ### Termine
 
-[Link zum Zoom-Meeting](https://th-koeln.zoom.us/j/87608931097)<br>
-Meeting-ID: 876 0893 1097<br>
-Kenncode: ccf2021
+Link zum Zoom-Meeting: Informationen auf Anfrage<br>
 
 [Link zum Miro-Board](https://miro.com/app/board/o9J_lFjTo04=/)<br>
 
