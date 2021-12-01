@@ -19,7 +19,8 @@
     "build:ssr": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format cjs",
     "build:es": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format es",
     "build:unpkg": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format iife",
-    "postbuild": "rimraf ./dist/types/dev ./dist/types/src/entry.d.ts"
+    "postbuild": "rimraf ./dist/types/dev ./dist/types/src/entry.d.ts",
+    "test": "jest --passWithNoTests"
   },
   "dependencies": {
     "openseadragon": "^2.4.2",
@@ -41,6 +42,7 @@
     "@vue/compiler-sfc": "^3.0.11",
     "@zerollup/ts-transform-paths": "^1.7.18",
     "cross-env": "^7.0.3",
+    "jest": "^27.4.3",
     "minimist": "^1.2.5",
     "node-sass": "^6.0.1",
     "postcss": "^8.2.10",
