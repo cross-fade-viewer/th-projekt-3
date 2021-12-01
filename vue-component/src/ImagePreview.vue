@@ -27,7 +27,7 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-@import '../styles/_styleguide.scss';
+
 .image-preview {
   cursor: pointer;
   width: 100%;

@@ -35,7 +35,7 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-@import '../styles/_styleguide.scss';
+
 .layer-control {
   display: flex;
   align-items: center;
@@ -49,7 +49,7 @@ export default defineComponent({
   }
 }
 input {
-  background: $color-lightest;
+  background: var(--color-lightest);
   height: 3px;
   width: 100%;
 }
@@ -68,7 +68,7 @@ input[type=range]::-webkit-slider-thumb {
   width: 40px;
   border-radius: 20px;
   background-color: #ffffff;
-  background-image: url(../assets/img/slider.svg);
+  /* background-image: url(../assets/img/slider.svg); */
   background-position: center center;
   background-size: contain;
   cursor: pointer;
@@ -88,9 +88,9 @@ input::-moz-range-thumb {
   width: 40px;
   height: 40px;
   border-radius: 20px;
-  background: $color-lightest;
+  background: var(--color-lightest);
   border-radius: 100%;
-  background-image: url(../assets/img/slider.svg);
+  /* background-image: url(../assets/img/slider.svg); */
   background-position: center center;
   background-size: cover;
   border: none;
@@ -105,7 +105,7 @@ input::-moz-range-thumb {
 .move-handler {
   min-width: 40px;
   min-height: 40px;
-  background-image: url(../assets/img/ebenen-verschieben.svg);
+  /* background-image: url(../assets/img/ebenen-verschieben.svg); */
   background-repeat: no-repeat;
   background-position: center center;
   cursor: grab;
@@ -118,6 +118,6 @@ input::-moz-range-thumb {
 }
 .text {
   width: 100px;
-  font-size: $space4;
+  font-size: var(--space-4);
 }
 </style>
