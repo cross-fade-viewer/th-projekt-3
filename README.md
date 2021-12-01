@@ -1,4 +1,3 @@
-<img alt="Git Banner of the Cranach Cross Fade Project" src="git-banner.png" style="width: 100%; height: auto; margin-bottom: 20px;">
 # th-projekt-3
 Aufbauend auf der Vision &amp; Konzept, sowie eines "minimal viable product" vorangegangener Semester, soll in diesem Projekt eine Auswertung bzw. Verwertung stattfinden. Dabei kann die Auswertung bzw. Verwertung verschiedenes umfassen, wie eine Evaluation, Weiterentwicklung in Richtung Produktreife, Hinarbeiten auf eine Forschungsveröffentlichung oder für die Open Source Community.  Das Projekt besteht aus zwei Teilen: Einem Projektanteil (6 CP) der vom jeweiligen Projectowner geleitet wird und einem Vertiefungsworkshop (6 CP), der zu Beginn des Semesters in Absprache mit dem Projectowner gewählt wird (nähere Informationen finden sich auch weiter unten im jeweiligen Semesterordner).
 
