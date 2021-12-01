@@ -1,6 +1,6 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
-import CrossfadeImageViewer from '@/crossfade-image-viewer.vue';
+import CrossfadeImageViewer from '@/crossfade-image-viewer/crossfade-image-viewer.vue';
 
 export default defineComponent({
   name: 'ServeDev',

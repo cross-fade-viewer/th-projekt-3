@@ -92,7 +92,7 @@ if (!argv.format || argv.format === 'es') {
     input: 'src/entry.esm.ts',
     external,
     output: {
-      file: 'dist/crossfade-image-viewer.esm.js',
+      file: 'dist/crossfade-image-viewer/crossfade-image-viewer.esm.js',
       format: 'esm',
       exports: 'named',
     },
@@ -131,7 +131,7 @@ if (!argv.format || argv.format === 'cjs') {
     external,
     output: {
       compact: true,
-      file: 'dist/crossfade-image-viewer.ssr.js',
+      file: 'dist/crossfade-image-viewer/crossfade-image-viewer.ssr.js',
       format: 'cjs',
       name: 'CrossfadeImageViewer',
       exports: 'auto',
@@ -154,7 +154,7 @@ if (!argv.format || argv.format === 'iife') {
     external,
     output: {
       compact: true,
-      file: 'dist/crossfade-image-viewer.min.js',
+      file: 'dist/crossfade-image-viewer/crossfade-image-viewer.min.js',
       format: 'iife',
       name: 'CrossfadeImageViewer',
       exports: 'auto',

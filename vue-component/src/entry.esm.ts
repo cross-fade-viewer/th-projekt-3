@@ -1,7 +1,7 @@
 import { App, Plugin } from 'vue';
 
 // Import vue component
-import component from '@/crossfade-image-viewer.vue';
+import component from '@/crossfade-image-viewer/crossfade-image-viewer.vue';
 
 // Define typescript interfaces for installable component
 type InstallableComponent = typeof component & { install: Exclude<Plugin['install'], undefined> };

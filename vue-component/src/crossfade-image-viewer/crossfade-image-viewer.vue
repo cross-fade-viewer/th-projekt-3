@@ -80,5 +80,5 @@
   </div>
 </template>
 
-<script src="./crossfade-image-viewer/logic.ts" lang="ts"></script>
-<style src="./crossfade-image-viewer/style.scss" lang="scss"></style>
+<script src="./logic.ts" lang="ts"></script>
+<style src="./style.scss" lang="scss"></style>
