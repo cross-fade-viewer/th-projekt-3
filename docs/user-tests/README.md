@@ -1,5 +1,5 @@
 # User-Test 
-- Wann soll die User-Tests  durchgeführt werden?
+- Wann sollen die User-Tests  durchgeführt werden?
 - Wer sind die User:
     - Herr Noss
     - ProgrammierInnen
