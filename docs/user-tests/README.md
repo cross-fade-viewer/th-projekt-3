@@ -3,6 +3,7 @@
 - Wer sind die User:
     - Herr Noss
     - ProgrammierInnen
+        - Mitstudierende aus dem Studiengangsschwerpunkt WTW
     - AnwenderInnen
 - Wie viele User-Testläufe und wann: 
     - Nur für die Vue-componente werden User-Tests durchgeführt.
