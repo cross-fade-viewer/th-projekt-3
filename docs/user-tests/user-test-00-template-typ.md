@@ -1,7 +1,7 @@
 # User-Test-00
 ### User-Test mit:
 ### Typ:
-### User-test am:
+### Datum:
 ### Anmerkungen: 
 ## Protokoll:
 ## Ergebnisse:
