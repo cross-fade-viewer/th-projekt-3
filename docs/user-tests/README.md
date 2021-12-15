@@ -13,7 +13,7 @@
     - Für AnwenderInnen: [Issue #43](https://github.com/yannic-bruegger/th-projekt-3/issues/43)
 
 ## User-Tests Ergebnisse erstellen
-Hier finden Sie eine Einleitung zur Erstellung einer User-Test-Ergebniss.
+Hier finden Sie eine Anleitung zur Erstellung eines User-Test-Protokolls.
 1. Template Datei kopieren und umbenennen (durchnummerieren, Name der Person, Typ) Beispiel: ``01-Noss-Programmierer.md``
 2. Info-Felder befüllen
 3. Die Ergebnisse in der Datei mitschreiben
