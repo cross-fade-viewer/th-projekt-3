@@ -7,7 +7,7 @@
 - Wie viele User-Testläufe und wann: 
     - Nur für die Vue-componente werden User-Tests durchgeführt.
     - Jedes Mal wird User-Test durchgeführt, wenn eine Componente testbar ist.
-    - Einmel am Ende werden alle Componente getestet(Vue + Andere).
+    - Einmal am Ende werden alle Komponenten getestet (Vue + andere).
 - Wie sehen die User-Tests aus:
     - Für ProgrammierInnen
     - Für AnwenderInnen
