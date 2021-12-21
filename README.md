@@ -21,7 +21,7 @@ Der aus Projekt I entstandende [Prototyp](https://www.figma.com/proto/Jbh4haqz3F
 Eine detaillierte Dokumentation der einzelnen Projektergebnisse, Entscheidungen und Standards findest du unter [/docs](./docs/README.md).
 
 ## Hinweis
-Hiermit wird bekannt gegeben, dass die Stakeholder*innen und Entwickler*innen dieser Komponente keine Verantwortung für die folgenden Fälle übernehmen:<br>
+Hiermit wird bekannt gegeben, dass die Stakeholder\*innen und Entwickler\*innen dieser Komponente keine Verantwortung für die folgenden Fälle übernehmen:<br>
 Beschädigung, Änderung, Urheberrechtsverletzung, Cyber-Unsicherheit und Herunterladbarkeit wertvoller Daten von zukünftigen Benutzern oder Entwicklern, unabhängig davon, ob es sich um natürliche oder juristische Personen handelt
 
 ## Starten des CCF-Moduls
