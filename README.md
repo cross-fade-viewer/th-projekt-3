@@ -36,6 +36,12 @@ docker compose up
 ```
 Öffne anschließend einen Browser deiner Wahl und navigiere zu [`http://localhost:8080/`](http://localhost:8080/)
 
+### Implementierung der Vue-Komponente
+
+Um die Komponente im eigenen Projekt verwenden zu können, muss eine [Vue](https://vuejs.org/)-App aufgesetzt und in die jeweilige Seite eingebaut werden. Darin kann die Komponente eingesetzt werden.
+
+Hierfür muss die [Vue.js](https://awesomejs.dev/for/vue/pkg/245043713989935618/) Bibliothek als Dependency eingefügt und installiert werden.
+
 ## Contribute
 Möchtest du an dem Projekt mitwirken, empfehlen wir dir Kontakt zum [Projektteam](#das-team) aufzunehmen. Alle benötigen Anleitungen und Beschreibungen der Standards, auf die wir uns im Team geeinigt haben, findest du im  [/docs](./docs/README.md) Verzeichnis.
 ### Termine
