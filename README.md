@@ -20,10 +20,6 @@ Der aus Projekt I entstandende [Prototyp](https://www.figma.com/proto/Jbh4haqz3F
 ## Dokumentation
 Eine detaillierte Dokumentation der einzelnen Projektergebnisse, Entscheidungen und Standards findest du unter [/docs](./docs/README.md).
 
-## Hinweis
-Hiermit wird bekannt gegeben, dass die Stakeholder\*innen und Entwickler\*innen dieser Komponente keine Verantwortung für die folgenden Fälle übernehmen:<br>
-Beschädigung, Änderung, Urheberrechtsverletzung, Cyber-Unsicherheit und Herunterladbarkeit wertvoller Daten von zukünftigen Benutzern oder Entwicklern, unabhängig davon, ob es sich um natürliche oder juristische Personen handelt
-
 ## Starten des CCF-Moduls
 Der einfachste Weg eine eigene Version des CCF-Moduls zu starten ist per [Docker](https://docs.docker.com/get-started/overview/) und [Docker Compose](https://docs.docker.com/compose/). Dafür benötigst du ausschließlich eine [Installation von Docker](https://docs.docker.com/get-docker/) und eine [Installation von Docker Compose](https://docs.docker.com/compose/install/), den Rest stellen wir dir bereit. Führe im Anschluss einfach folgende Schritte aus:
 
