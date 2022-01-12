@@ -9,4 +9,4 @@ Unser npm-Paket wird auf npmjs.com veröffentlichen.
 5. Mit dem Befehl npm publisch wird Ihr npm-Paket veröffentlicht.
 6. Nach der Veröffentlichung sollten Sie in der Lage sein, Ihre npm-Paketseite auf npmjs.com anzuzeigen.
 
-[Guid Link zur Veröffentlichung einer npm-Pake](https://ichi.pro/de/entwickeln-und-veroffentlichen-eines-typescript-npm-pakets-239678036722217)
+[Guide Link zur Veröffentlichung einer npm-Paket](https://ichi.pro/de/entwickeln-und-veroffentlichen-eines-typescript-npm-pakets-239678036722217)
