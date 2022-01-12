@@ -20,7 +20,7 @@ Zunächst wurden die Stakeholder festgehalten: Entwickler, Kunsthistoriker und K
 
 Anschließend wurde ein Mapping erstellt, wie der Einfluss und wie die Einstellung zum Projekt seitens der Stakeholder ist.
 
-![Stakeholder-Mapping](https://github.com/yannic-bruegger/th-projekt-3/blob/docs/%237-stakholderanalyse/docs/pictures/Stakeholder-Mapping.png)
+![Stakeholder-Mapping](pictures/Stakeholder-Mapping.png)
 
 
 **Legende:**
@@ -33,7 +33,7 @@ Anschließend wurde ein Mapping erstellt, wie der Einfluss und wie die Einstellu
 
 Anschließend fand die eigentliche Stakeholderanalyse statt.
 
-![Stakeholderanalyse](https://github.com/yannic-bruegger/th-projekt-3/blob/docs/%237-stakholderanalyse/docs/pictures/Stakeholderanalyse.png)
+![Stakeholderanalyse](pictures/Stakeholderanalyse.png)
 
 
 ### Hier eine kurze Erklärung der einzelnen Positionen:
