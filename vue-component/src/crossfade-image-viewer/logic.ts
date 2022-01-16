@@ -14,13 +14,6 @@ export default defineComponent({
     ImagePreview,
   },
 
-  props: {
-    layerImages: {
-      type: Array,
-      required: true,
-    },
-  },
-
   setup() {
     type Layer = {
       name: string,
@@ -29,6 +22,13 @@ export default defineComponent({
       thumbnail ?: string,
     }
 
+    type Image = {
+      url: string,
+      title?: string,
+      thumbUrl?: string,
+    }
+
+    const layerImages = ref<Image[]>([]);
     const uiZeigen = ref<boolean>(true);
     const isFullscreen = ref<boolean>(false);
     const possibleLayers = ref<Layer[]>([]);
@@ -80,20 +80,14 @@ export default defineComponent({
       viewer.world.addItem(item, { index: reverseIndex(changed.moved.newIndex) });
     }
 
-    //TODO: check how props are passed, I'm too dumb :(
     const loadImageStack = async () => {
       const STANDARD_OPACITY = 100;
-      type Image = {
-        url: string,
-        title?: string,
-        thumbUrl?: string,
-      }
 
-      if(!this.layerImages || this.layerImages.length === 0) {
+      if(!layerImages) {
         return console.error("Error: no image layers were provided.");
       }
 
-      this.layerImages.forEach( (image: Image, index: number) => {
+      layerImages.value.forEach( (image: Image, index: number) => {
 
         //check if title exists, else generate some alternative
         const imageTitle = image.title ? image.title : 'layerImage-'+index;
@@ -171,7 +165,7 @@ export default defineComponent({
         .catch((error: Error) => {
           // element could not exit fullscreen mode
           // error message
-          console.log(error.message);
+          console.error(error.message);
         });
     }
 
