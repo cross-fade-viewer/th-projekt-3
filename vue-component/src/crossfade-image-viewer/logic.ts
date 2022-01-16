@@ -29,25 +29,25 @@ export default defineComponent({
     }
 
     // props for debugging
-    const testImages: any[] = [];
-    function getAllTestImages() {
-      testImages.push(
-        {
-          url: `https://images.unsplash.com/photo-1526336024174-e58f5cdd8e13?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80`,
-        },
-        {
-          name: 'Test Image 2',
-          url: `https://images.unsplash.com/photo-1495360010541-f48722b34f7d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80`,
-        },
-        {
-          name: 'Test Image 3',
-          url: `https://images.unsplash.com/photo-1548247416-ec66f4900b2e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=720&q=80`,
-        },
-        {
-          test: 'invalid Type',
-        }
-      );
-    }
+    // const testImages: any[] = [];
+    // function getAllTestImages() {
+    //   testImages.push(
+    //     {
+    //       url: `https://images.unsplash.com/photo-1526336024174-e58f5cdd8e13?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80`,
+    //     },
+    //     {
+    //       name: 'Test Image 2',
+    //       url: `https://images.unsplash.com/photo-1495360010541-f48722b34f7d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80`,
+    //     },
+    //     {
+    //       name: 'Test Image 3',
+    //       url: `https://images.unsplash.com/photo-1548247416-ec66f4900b2e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=720&q=80`,
+    //     },
+    //     {
+    //       test: 'invalid Type',
+    //     }
+    //   );
+    // }
 
     const layerImages = ref<Image[]>([]);
     const uiZeigen = ref<boolean>(true);
