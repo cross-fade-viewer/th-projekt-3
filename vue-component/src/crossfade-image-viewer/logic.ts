@@ -8,7 +8,12 @@ import ImagePreview from '../ImagePreview.vue';
 let viewer : OpenSeadragon.Viewer;
 
 export default defineComponent({
-  components: { LayerControl, draggable, ImagePreview },
+  components: {
+    LayerControl,
+    draggable,
+    ImagePreview,
+  },
+
   setup() {
     type Layer = {
       name: string,
@@ -17,6 +22,34 @@ export default defineComponent({
       thumbnail ?: string,
     }
 
+    type Image = {
+      url: string,
+      title?: string,
+      thumbUrl?: string,
+    }
+
+    // props for debugging
+    // const testImages: any[] = [];
+    // function getAllTestImages() {
+    //   testImages.push(
+    //     {
+    //       url: `https://images.unsplash.com/photo-1526336024174-e58f5cdd8e13?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80`,
+    //     },
+    //     {
+    //       name: 'Test Image 2',
+    //       url: `https://images.unsplash.com/photo-1495360010541-f48722b34f7d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80`,
+    //     },
+    //     {
+    //       name: 'Test Image 3',
+    //       url: `https://images.unsplash.com/photo-1548247416-ec66f4900b2e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=720&q=80`,
+    //     },
+    //     {
+    //       test: 'invalid Type',
+    //     }
+    //   );
+    // }
+
+    const layerImages = ref<Image[]>([]);
     const uiZeigen = ref<boolean>(true);
     const isFullscreen = ref<boolean>(false);
     const possibleLayers = ref<Layer[]>([]);
@@ -68,43 +101,37 @@ export default defineComponent({
       viewer.world.addItem(item, { index: reverseIndex(changed.moved.newIndex) });
     }
 
-    //TODO: change load logic
-    async function loadImageStack() {
+    const loadImageStack = () => {
+
+      // for Debugging
+      // getAllTestImages();
+      // layerImages.value = testImages;
+
       const STANDARD_OPACITY = 100;
-      const imageTypes : {[key: string]: string} = {
-        irr: 'IRR',
-        overall: 'Overall',
-        'x-radiograph': 'X-Ray',
-        'uv-light': 'UV',
-      };
-      const results = await fetch(`http://127.0.0.1:8000/artworks/imageStack`, {
-        method: 'GET',
-      }).then((response) => response.json())
-        .then((json) => json)
-        .catch((error) => console.log(`Fetching ImageStack failed: ${error}`));
 
-      Object.keys(results.imageStack).filter(() => true).forEach((imageType) => {
-        if (!(imageType in imageTypes)) {
-          return;
+      if(!layerImages) {
+        return console.error("Error: no image layers were provided.");
+      }
+
+      layerImages.value.forEach( (image: Image, index: number) => {
+
+        //check if title exists, else generate some alternative
+        const imageTitle = image.title ? image.title : 'layerImage-'+index;
+        //check if url exists
+        if (!image.url) {
+          return console.error("Error: no url found in image data.");
         }
+        //check if thumbnail url exists, else use regular url
+        const thumbnailImageURL = image.thumbUrl ? image.thumbUrl : image.url;
 
-        let i : number;
-        for (i = 0; i < results.imageStack[imageType].images.length; i += 1) {
-          const originalImageData = results.imageStack[imageType].images[i].origin;
-          const thumbnailImageData = results.imageStack[imageType].images[i].small;
-          const originalPath = originalImageData.path;
-          const originalSrc = originalImageData.src;
-          const smallPath = thumbnailImageData.path;
-          const smallSrc = thumbnailImageData.src;
-
-          possibleLayers.value.push({
-            name: imageTypes[imageType],
-            opacity: STANDARD_OPACITY,
-            url: `http://localhost:8000/${results.basePath}/${originalPath}/${originalSrc}`,
-            thumbnail: `http://localhost:8000/${results.basePath}/${smallPath}/${smallSrc}`,
-          });
-        }
+        possibleLayers.value.push({
+          name: imageTitle,
+          opacity: STANDARD_OPACITY,
+          url: image.url,
+          thumbnail: thumbnailImageURL,
+        });
       });
+
       addPossibleLayerToLayers(0);
     }
 
@@ -164,7 +191,7 @@ export default defineComponent({
         .catch((error: Error) => {
           // element could not exit fullscreen mode
           // error message
-          console.log(error.message);
+          console.error(error.message);
         });
     }
 
