@@ -1,5 +1,6 @@
 {
   "name": "crossfade-image-viewer",
+  "license": "SEE LICENSE IN <../LICENSE>",
   "version": "1.0.0",
   "description": "",
   "main": "dist/crossfade-image-viewer/crossfade-image-viewer.ssr.js",
