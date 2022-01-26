@@ -30,10 +30,16 @@ git clone https://github.com/yannic-bruegger/th-projekt-3.git <Ziel-Verzeichnis>
 
 # 2. In das lokale Repository navigieren
 cd <Ziel-Verzeichnis>
-
-# 2. Docker compose
-docker compose up
 ```
+
+Um die Vue-Componente zu starten führe im Anschluss folgende Befehle durch:
+
+```
+cd vue-component
+npm install
+npm run serve
+```
+
 Öffne anschließend einen Browser deiner Wahl und navigiere zu [`http://localhost:8080/`](http://localhost:8080/)
 
 ### Implementierung der Vue-Komponente
