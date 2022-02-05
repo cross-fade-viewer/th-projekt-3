@@ -5,6 +5,8 @@ import {
   prependImageToImageCollection,
   updateOpacityAtIndexInImageCollection,
   removeImageFromImageCollection,
+  ImageCollection,
+  removeImageFromOneCollectionAndAddToAnother
 } from './cross-fade-viewer-logic.ts'
 
 Deno.test('appendImage', () => {
@@ -35,3 +37,13 @@ Deno.test('deleteAtIndex', () => {
   assert(smallerCollection.length === 1);
   assertEquals(smallerCollection[0], element2);
 });
+
+Deno.test('swapImageBetweenTwoCollections', () => {
+  const collection1: ImageCollection = [{sourceUrl: '/', opacity: 1, title: 'Element 1'}];
+  const collection2: ImageCollection = [];
+  
+  const {removedFromCollection, addedToCollection} = removeImageFromOneCollectionAndAddToAnother(0, collection1, collection2);
+
+  assert(removedFromCollection.length === 0);
+  assert(addedToCollection.length === 1);
+})

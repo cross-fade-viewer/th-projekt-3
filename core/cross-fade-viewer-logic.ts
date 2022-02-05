@@ -29,3 +29,10 @@ export function removeImageFromImageCollection(index: number, collection: ImageC
   smallerCollection.splice(index, 1);
   return smallerCollection;
 }
+
+export function removeImageFromOneCollectionAndAddToAnother(index: number, fromCollection: ImageCollection, toCollection: ImageCollection) {
+  const image = {...fromCollection[index]};
+  const removedFromCollection = removeImageFromImageCollection(index, fromCollection);
+  const addedToCollection = appendImageToImageCollection(image, toCollection);
+  return {removedFromCollection, addedToCollection}
+}
