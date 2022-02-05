@@ -9,11 +9,11 @@ export type Image = {
 }
 
 export function prependImageToImageCollection(image: Image, collection: ImageCollection): ImageCollection {
-  return [image, ...collection]
+  return [{...image}, ...collection]
 }
 
 export function appendImageToImageCollection(image: Image, collection: ImageCollection): ImageCollection {
-  return [...collection, image]
+  return [...collection, {...image}]
 }
 
 export function updateOpacityAtIndexInImageCollection(opacity: number, index: number, collection: ImageCollection) {
@@ -22,4 +22,10 @@ export function updateOpacityAtIndexInImageCollection(opacity: number, index: nu
   const copy = [...collection];
   copy[index] = {...copy[index], opacity: opacity};
   return copy;
+}
+
+export function removeImageFromImageCollection(index: number, collection: ImageCollection) {
+  const smallerCollection = [...collection];
+  smallerCollection.splice(index, 1);
+  return smallerCollection;
 }
