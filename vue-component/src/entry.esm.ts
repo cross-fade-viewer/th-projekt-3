@@ -16,6 +16,7 @@ export default /*#__PURE__*/((): InstallableComponent => {
   // Attach install function executed by Vue.use()
   installable.install = (app: App) => {
     app.component('CrossfadeImageViewer', installable);
+    app.component('CrossFadeGallery', installable);
   };
   return installable;
 })();

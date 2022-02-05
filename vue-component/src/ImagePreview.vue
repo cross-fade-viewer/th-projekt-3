@@ -5,9 +5,6 @@
     </div>
     <dl class="info">
       <dt>{{title}}</dt>
-      <dd>
-        {{ description ? description : '' }}
-      </dd>
     </dl>
   </div>
 </template>
