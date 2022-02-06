@@ -1,4 +1,5 @@
 .crossfade-image-viewer {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   box-sizing: border-box;
   display: flex;
   width: 100%;
@@ -19,15 +20,41 @@
 }
 
 .overlay {
+  box-sizing: border-box;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  padding: 100px;
   z-index: 1;
-  pointer-events: none;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
+  pointer-events: none;
+
+  .slider-container {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 50%;
+
+    .slider-group {
+      color: #ffffff;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 1em;
+      pointer-events: all;
+      input {
+        flex-grow: 8;
+      }
+      span {
+        flex-grow: 2;
+      }
+      button {
+        flex-grow: 0;
+      }
+    }
+  }
 }

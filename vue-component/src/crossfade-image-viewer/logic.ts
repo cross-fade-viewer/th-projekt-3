@@ -46,6 +46,24 @@ export default defineComponent({
       viewer.addSimpleImage({url: usedImages.value[usedImages.value.length - 1].sourceUrl})
     }
 
+    function sliderChanged(event: any) {
+      const opacity = event.srcElement.value;
+      const index = event.srcElement.dataset.index;
+      usedImages.value[index].opacity = opacity;
+      viewer.world.getItemAt(index).setOpacity(opacity);
+    }
+
+    function removeImage(event: any) {
+      const index = event.srcElement.dataset.index;
+      // Bild aus Viewer löschen
+      viewer.world.removeItem(viewer.world.getItemAt(index));
+
+      // Bild von used wieder in unused packen
+      const result = removeImageFromOneCollectionAndAddToAnother(index, usedImages.value, unusedImages.value);
+      unusedImages.value = result.addedToCollection;
+      usedImages.value = result.removedFromCollection;
+    }
+
     onMounted(() => {
       viewer = OpenSeadragon({
         // TODO: Might cause trouble when using our component multiple times.
@@ -66,6 +84,6 @@ export default defineComponent({
       });
     });
 
-    return {unusedImages, usedImages, useImage, showGallery, onUseImage};
+    return {unusedImages, usedImages, useImage, showGallery, onUseImage, sliderChanged, removeImage};
   },
 });
