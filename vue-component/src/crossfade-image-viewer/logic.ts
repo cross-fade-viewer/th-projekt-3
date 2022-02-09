@@ -25,7 +25,7 @@ export default defineComponent({
     noImageText: {
       type: Boolean,
       // TODO: Translate to english and make text more general.
-      default: 'Du hast alle Bildebenen entfernt. Füge neue hinzu, indem du auf das (+) Symbold in der oberen rechten Ecke klickst.'
+      default: 'Du hast alle Bildebenen entfernt. Füge neue hinzu, indem du auf das (+) Symbol in der oberen rechten Ecke klickst.'
     },
   },
   setup(props: Data) {
