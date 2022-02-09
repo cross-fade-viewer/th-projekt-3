@@ -46,4 +46,4 @@ Deno.test('swapImageBetweenTwoCollections', () => {
 
   assert(removedFromCollection.length === 0);
   assert(addedToCollection.length === 1);
-})
+});
