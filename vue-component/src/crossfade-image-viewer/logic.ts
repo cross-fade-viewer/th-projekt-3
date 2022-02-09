@@ -23,7 +23,7 @@ export default defineComponent({
     displayedImages: { type: Array, default: [] },
     integratedGallery: { type: Boolean, default: true },
     noImageText: {
-      type: Boolean,
+      type: String,
       // TODO: Translate to english and make text more general.
       default: 'Du hast alle Bildebenen entfernt. Füge neue hinzu, indem du auf das (+) Symbol in der oberen rechten Ecke klickst.'
     },
