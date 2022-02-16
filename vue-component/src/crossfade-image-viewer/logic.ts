@@ -28,14 +28,6 @@ export default defineComponent({
       default: 'Du hast alle Bildebenen entfernt. Füge neue hinzu, indem du auf das (+) Symbol in der oberen rechten Ecke klickst.'
     },
   },
-  /*
-  computed: {
-    usedImagesReverse: {
-      get():ImageCollection { return this.usedImages.slice().reverse(); },
-      set(newList: ImageCollection) { this.usedImages = newList.slice().reverse();}
-    }
-  },
-  */
   setup(props: Data) {
     let viewer : OpenSeadragon.Viewer;
 
@@ -53,7 +45,6 @@ export default defineComponent({
         usedImages.value = newCollection.slice().reverse();
       },
     });
-
 
     function selectLayer(index: number | undefined) {
       selectedLayerIndex.value = index;
@@ -104,9 +95,7 @@ export default defineComponent({
       const result = removeImageFromOneCollectionAndAddToAnother(index, usedImages.value, unusedImages.value);
       unusedImages.value = result.addedToCollection;
       usedImages.value = result.removedFromCollection;
-      
       viewer.world.removeItem(viewer.world.getItemAt(index));
-
     }
 
     onMounted(() => {
