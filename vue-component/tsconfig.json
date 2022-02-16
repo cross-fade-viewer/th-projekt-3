@@ -19,7 +19,8 @@
     "types": [
       "node",
       "vue",
-      "jest"
+      "jest",
+      "@types/jest"
     ],
     "paths": {
       "@/*": [
