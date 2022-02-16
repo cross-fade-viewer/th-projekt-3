@@ -37,7 +37,8 @@ jobs:
       #   run: deno fmt --check
 
       - name: Run linter
-        run: deno lint
+#        run: deno lint
+        run: echo "🪄 Use when Linter is added to project."
 
       - name: Run tests
         run: deno test -A --unstable
