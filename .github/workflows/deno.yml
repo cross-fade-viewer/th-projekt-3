@@ -57,12 +57,12 @@ jobs:
             ${{ runner.os }}-build-
             ${{ runner.os }}-
 
-      - run: cd vue-component
-
       # Install required deps for action
       - name: Install Dependencies
+        working-directory: ./vue-component
         run: npm install
       
       # Finally, run our tests
       - name: Run Jest tests
-        run: cd vue-component && npm test
+        working-directory: ./vue-component
+        run: npm test
