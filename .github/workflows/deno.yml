@@ -40,7 +40,7 @@ jobs:
 #        run: deno lint
         run: echo "🪄 Use when Linter is added to project."
 
-      - name: Run tests
+      - name: Run tests ./core
         run: deno test -A --unstable --coverage=cov_profile
 
       - name: Check Deno Test Coverage
