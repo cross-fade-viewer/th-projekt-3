@@ -23,10 +23,10 @@
             <img src="./opacity-high.svg">
           </div>
         </div>
-      <!--
         <div class="nolayerinfo" v-show="usedImages.length < 1" style="color: white;">
           {{noImageText}}
         </div>
+      <!--
         <div class="slider-container">
           <div class="slider-group" v-for="(image, i) in usedImages" :key="i">
             <input type="range" min="0" max="1" step="0.01" @input="sliderChanged" :data-index="i">
