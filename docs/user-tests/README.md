@@ -1,11 +1,11 @@
 # User-Test 
 - User:
     - Herr Noss
-    - ProgrammierInnen
+    - ProgrammiererInnen
         - Mitstudierende aus dem Studiengangsschwerpunkt WTW
     - AnwenderInnen
 - Wie viele User-Testläufe und wann: 
-    - Nur für die Vue-componente werden User-Tests durchgeführt.
+    - Nur für die Vue-Komponente werden User-Tests durchgeführt.
     - **Jedes Mal wird ein User-Test durchgeführt, wenn etwas neues implementiert wurde und testbar ist.**
     - Einmal am Ende werden alle Komponenten getestet (Vue + andere).
     - **Es werden beim ersten Mal 4 User Tests durchgeführt. (2x Anwender und 2x Entwickler)**
@@ -16,7 +16,7 @@
 
 ## Durchführung der User-Tests 
 - Zuerst wird unsere Anwendung den Anwendern/den Entwicklern vorgestellt.
-- Es wird vorgeschlagen, dass sie selbständig mit der Anwendung interagieren. Dazu werden ihnen ein paar Beispiel Aufgaben zur Verfügung gestellt.
+- Es wird vorgeschlagen, dass sie selbständig mit der Anwendung interagieren. Dazu werden ihnen ein paar Beispiel-Aufgaben zur Verfügung gestellt.
 - Während der Evaluierung wird der Prozess der Interaktion beobeachtet:
     - Ob alle Komponenten erkannt werden können.
     - Ob die Anwendung selbsterklärend ist.
