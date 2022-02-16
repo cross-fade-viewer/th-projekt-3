@@ -3,13 +3,17 @@
     <div id="openseadragon">
       <div class="overlay">
         <div class="control-menu">
-          <div class="title">Layers{{selectedLayerIndex}}</div>
-          <div class="layers">
-            <div class="layer-control" :class="{selected: selectedLayerIndex === i}" draggable="true" v-for="(image, i) in usedImages" :key="i">
-              <div @click="selectLayer(i)">{{i}}-{{image.title}} ({{(image.opacity*100).toFixed(0)}}%)</div>
-              <div class="spacer"></div>
-              <button @click="removeImage(i)"><img src="./close.svg"></button>
-            </div>
+          <div class="title">Layers</div>
+          <div>
+            <draggable v-model="usedImagesReverse" item-key="id" @change="onLayerMoved" class="layers">
+              <template #item="{element, index}">
+                <div class="layer-control" :class="{selected: reverseIndexOfArray(selectedLayerIndex, usedImages) === index}" draggable="true">
+                  <div @click="selectLayer(reverseIndexOfArray(index, usedImagesReverse))">{{element.title}} ({{(element.opacity*100).toFixed(0)}}%)</div>
+                  <div class="spacer"></div>
+                  <button @click="removeImage(reverseIndexOfArray(index, usedImagesReverse))"><img src="./close.svg"></button>
+                </div>
+              </template>
+            </draggable>
           </div>
           <div class="spacer"></div>
           <div class="opacity-control">

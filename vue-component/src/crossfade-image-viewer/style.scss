@@ -58,8 +58,11 @@
     }
 
     .layers {
+      // ? Does not work with sortable.js right now. See https://github.com/SortableJS/Sortable/issues/1447 
+      /*
       display: flex;
       flex-direction: column-reverse;
+      */
     }
 
     .spacer {

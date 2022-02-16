@@ -1,4 +1,4 @@
-import { ref, onMounted, defineComponent } from 'vue';
+import { ref, onMounted, defineComponent, computed, WritableComputedRef } from 'vue';
 import OpenSeadragon from 'openseadragon';
 import draggable from 'vuedraggable';
 import { ImageCollection, Image, removeImageFromOneCollectionAndAddToAnother} from '../../../core/cross-fade-viewer-logic';
@@ -28,6 +28,14 @@ export default defineComponent({
       default: 'Du hast alle Bildebenen entfernt. Füge neue hinzu, indem du auf das (+) Symbol in der oberen rechten Ecke klickst.'
     },
   },
+  /*
+  computed: {
+    usedImagesReverse: {
+      get():ImageCollection { return this.usedImages.slice().reverse(); },
+      set(newList: ImageCollection) { this.usedImages = newList.slice().reverse();}
+    }
+  },
+  */
   setup(props: Data) {
     let viewer : OpenSeadragon.Viewer;
 
@@ -37,15 +45,41 @@ export default defineComponent({
     const unusedImages = ref<ImageCollection>(props.availableImages);
     const usedImages = ref<ImageCollection>(props.displayedImages);
 
-    function selectLayer(index: number) {
+    const usedImagesReverse: WritableComputedRef<ImageCollection> = computed({
+      get(): ImageCollection {
+        return usedImages.value.slice().reverse();
+      },
+      set(newCollection: ImageCollection): void {
+        usedImages.value = newCollection.slice().reverse();
+      },
+    });
+
+
+    function selectLayer(index: number | undefined) {
       selectedLayerIndex.value = index;
-      displayedOpacity.value = usedImages.value[selectedLayerIndex.value].opacity;
+      if(index !== undefined) {
+        displayedOpacity.value = usedImages.value[index ?? 0].opacity;
+      }
     }
 
     function onUseImage(index: number) {
       useImage(index);
     }
+
+    function reverseIndexOfArray(index: number, array: Array<any>): number{
+      return array.length - 1 - index;
+    }
     
+    function onLayerMoved(event: any) {
+      selectLayer(reverseIndexOfArray(event.moved.newIndex, usedImages.value));
+      const oldIndex = reverseIndexOfArray(event.moved.oldIndex, usedImages.value);
+      const newIndex = reverseIndexOfArray(event.moved.newIndex, usedImages.value);
+
+      const movedImage = viewer.world.getItemAt(oldIndex);
+      viewer.world.removeItem(movedImage);
+      viewer.world.addItem(movedImage, {index: newIndex});
+    }
+
     function useImage(index: number) {
       const result = removeImageFromOneCollectionAndAddToAnother(index, unusedImages.value, usedImages.value);
       unusedImages.value = result.removedFromCollection;
@@ -66,6 +100,7 @@ export default defineComponent({
       if (selectedLayerIndex.value === index || index < (selectedLayerIndex.value || 0)) {
         selectedLayerIndex.value = usedImages.value.length - 1 > 0 ? usedImages.value.length - 2 : undefined;
       }
+
       const result = removeImageFromOneCollectionAndAddToAnother(index, usedImages.value, unusedImages.value);
       unusedImages.value = result.addedToCollection;
       usedImages.value = result.removedFromCollection;
@@ -104,7 +139,10 @@ export default defineComponent({
       removeImage,
       selectedLayerIndex,
       selectLayer,
-      displayedOpacity
+      displayedOpacity,
+      onLayerMoved,
+      usedImagesReverse,
+      reverseIndexOfArray
     };
   },
 });
