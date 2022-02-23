@@ -28,3 +28,4 @@ um eine **höhere Codequalität** zu erreichen.
 ### Auswirkungen
 * Es lassen sich automatisierte Tests für alle Kernfunktionen implementieren.
 * Diese Tests können gemeinsam mit den Jest-Tests der Vue-Komponente durch GitHub Workflows ausgeführt werden um eine hohe Branch-Qualität zu erhalten. 
+* Zusätzlich erlaubt Deno eine einfache Weise der Überprüfung zur Testabdeckung unserer Kernfunktionalitäten
