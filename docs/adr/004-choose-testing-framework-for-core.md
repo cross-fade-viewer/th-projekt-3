@@ -1,4 +1,4 @@
-# Decide which test framework to use for core functionality
+# Entscheidung zum Testframework für die Kernfunktionalitäten
 
 ## Einleitung
 
