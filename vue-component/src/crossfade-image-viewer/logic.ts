@@ -102,7 +102,7 @@ export default defineComponent({
       viewer = OpenSeadragon({
         // TODO: Might cause trouble when using our component multiple times.
         id: 'openseadragon', 
-        showNavigator: true,
+        showNavigator: false,
         showNavigationControl: false,
         showZoomControl: false,
         showHomeControl: false,
