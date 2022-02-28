@@ -30,9 +30,75 @@
   z-index: 1;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   pointer-events: none;
+
+  .control-menu {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    pointer-events: all;
+    position: fixed;
+    z-index: 100;
+    bottom: 50px;
+    left: 50px;
+    background-color: #33333396;
+    backdrop-filter: blur(20px);
+    padding: 1em;
+    gap: .5em;
+    border-radius: 5px;
+    box-shadow: #0a0a0a3f 0px 2px 20px;
+    min-width: 300px;
+    
+    .title {
+      font-weight: 700;
+      margin-bottom: 1em;
+    }
+
+    .spacer {
+      flex-grow: 1;
+    }
+    .opacity-control {
+      display: flex;
+      gap: .5em;
+      input {
+        flex-grow: 1;
+      }
+    }
+
+    .layer-control {
+      padding: .5em;
+      display: flex;
+      align-items: center;
+      transition: cubic-bezier(0.075, 0.82, 0.165, 1) all 1s;
+      border-radius: 3px;
+      gap: 1em;
+      cursor: grab;
+      button {
+        background-color: none;
+        border: none;
+        border-radius: none;
+        margin: 0;
+        padding: 0;
+        color: inherit;
+        background: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+      }
+
+      &:hover {
+        background-color: #ffffff17;
+      }
+      &.selected {
+        color: #0075FF;
+        background-color: #ffffff17;
+      }
+    }
+  }
 
   .slider-container {
     display: flex;
