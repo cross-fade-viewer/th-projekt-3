@@ -26,26 +26,19 @@ export default defineComponent({
 <style lang="scss" scoped>
 
 .image-preview {
+  z-index: 20;
+  margin: 2em auto;
   cursor: pointer;
-  width: 100%;
-  height: 100%;
+  min-width: 20em;
+  width: 90%;
   display: flex;
   flex-direction: column;
   background-color: #222;
-  .image {
-    position: relative;
-    height: 100%;
-    background-color: rgba(0,0,0,.04);
-  }
+
   img {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
     display: block;
-    width: 100%;
     height: 100%;
+    width: 100%;
     -o-object-fit: contain;
     object-fit: contain;
   }
@@ -54,8 +47,8 @@ export default defineComponent({
     background-color: #444444;
     flex-grow: 1;
     padding: .8rem;
-    color: #f2f2f2;
-    border-top: 1px solid #fc0;
+    color: #fff;
+    border-top: 1px solid #fff;
     background-color: #444;
   }
 }
