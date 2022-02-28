@@ -1,4 +1,7 @@
 .gallery {
-  width: 100%;
+  z-index: 20;
+  overflow-y: scroll;
+  width: clamp(20em, 50vw, 50em);
   height: 100%;
+  background-color: rgb(29, 28, 28);
 }
