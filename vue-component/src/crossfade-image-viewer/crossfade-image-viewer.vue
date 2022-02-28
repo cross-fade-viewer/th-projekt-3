@@ -16,15 +16,15 @@
             </draggable>
           </div>
           <div class="spacer"></div>
+          <div class="nolayerinfo" v-show="usedImages.length < 1">
+            {{noImageText}}
+          </div>
           <div class="opacity-control">
             <img src="./opacity-low.svg">
             <input v-if="selectedLayerIndex !== undefined && usedImages.length" type="range" min="0" max="1" step="0.01" @input="sliderChanged" v-model="displayedOpacity">
             <input v-else type="range" min="0" max="1" step="0.01" disabled>
             <img src="./opacity-high.svg">
           </div>
-        </div>
-        <div class="nolayerinfo" v-show="usedImages.length < 1" style="color: white;">
-          {{noImageText}}
         </div>
       </div>
     </div>
