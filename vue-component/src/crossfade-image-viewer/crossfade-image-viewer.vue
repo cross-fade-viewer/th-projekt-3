@@ -29,7 +29,7 @@
       </div>
     </div>
     <button @click="showGallery = !showGallery" v-if="integratedGallery">👁</button>
-    <div class="gallery">
+    <div class="gallery-container">
       <cross-fade-gallery :images="unusedImages" v-show="showGallery" @useImage="onUseImage"/>
     </div>
   </div>
