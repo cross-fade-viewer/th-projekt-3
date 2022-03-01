@@ -2,7 +2,7 @@
 import { defineComponent } from 'vue';
 import CrossfadeImageViewer from '@/crossfade-image-viewer/crossfade-image-viewer.vue';
 import CrossFadeGallery from '@/cross-fade-gallery/CrossFadeGallery.vue';
-import { ImageCollection } from '../../core/cross-fade-viewer-logic';
+import { ImageCollection, Themes } from '../../core/cross-fade-viewer-logic';
 
 export default defineComponent({
   name: 'ServeDev',
@@ -17,9 +17,10 @@ export default defineComponent({
       {title: 'Some Title C', sourceUrl: 'https://i.picsum.photos/id/911/1500/1800.jpg?hmac=XZ1nsfj9Skb4V6EwZPnCLxQnMC-2MFuwlsjAQ9yqsok', opacity: 1},
     ]
     let displayedImages: ImageCollection = [
-      //{title: 'Some Title D', sourceUrl: 'https://i.picsum.photos/id/398/1500/1800.jpg?hmac=arRnFqZvf1PoJpNYzznhdOMx9veRHgTcyf3mM2wxFpY', opacity: 1},
+      {title: 'Some Title D', sourceUrl: 'https://i.picsum.photos/id/398/1500/1800.jpg?hmac=arRnFqZvf1PoJpNYzznhdOMx9veRHgTcyf3mM2wxFpY', opacity: 1},
     ]
-    return { availableImages, displayedImages };
+    let usedTheme: Themes = Themes.pastel;
+    return { availableImages, displayedImages, usedTheme };
   },
 });
 </script>
@@ -28,7 +29,7 @@ export default defineComponent({
   <div id="app">
     <div class="container center">
       <div class="component">
-        <crossfade-image-viewer :availableImages="availableImages" :displayedImages="displayedImages" :integratedGallery="true"/>
+        <crossfade-image-viewer :availableImages="availableImages" :displayedImages="displayedImages" :integratedGallery="true" :themeName="usedTheme"/>
       </div>
       <!--
       <div class="component">
