@@ -1,7 +1,7 @@
 import { ref, onMounted, defineComponent, computed, WritableComputedRef } from 'vue';
 import OpenSeadragon from 'openseadragon';
 import draggable from 'vuedraggable';
-import { ImageCollection, Image, removeImageFromOneCollectionAndAddToAnother} from '../../../core/cross-fade-viewer-logic';
+import { ImageCollection, Image, removeImageFromOneCollectionAndAddToAnother, Themes} from '../../../core/cross-fade-viewer-logic';
 import LayerControl from '../LayerControl.vue';
 import ImagePreview from '../ImagePreview.vue';
 import CrossFadeGallery from '../cross-fade-gallery/CrossFadeGallery.vue';
@@ -27,6 +27,7 @@ export default defineComponent({
       // TODO: Translate to english and make text more general.
       default: 'Du hast alle Bildebenen entfernt. Füge neue hinzu, indem du auf das (+) Symbol in der oberen rechten Ecke klickst.'
     },
+    themeName: { type: String, default: Themes.base},
   },
   setup(props: Data) {
     let viewer : OpenSeadragon.Viewer;
