@@ -34,6 +34,7 @@ export default defineComponent({
   display: flex;
   flex-direction: column;
   background-color: #222;
+  text-align:center;
 
   img {
     display: block;

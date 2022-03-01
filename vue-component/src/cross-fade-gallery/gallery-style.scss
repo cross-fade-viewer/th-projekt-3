@@ -1,7 +1,8 @@
 .gallery {
   z-index: 20;
   overflow-y: scroll;
-  width: clamp(20em, 50vw, 50em);
+  width: 30em;
   height: 100%;
   background-color: rgb(29, 28, 28);
+  // display: flex;
 }
