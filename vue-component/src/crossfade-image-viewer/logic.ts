@@ -37,6 +37,7 @@ export default defineComponent({
     const displayedOpacity = ref<number>(1);
     const unusedImages = ref<ImageCollection>(props.availableImages);
     const usedImages = ref<ImageCollection>(props.displayedImages);
+    const usedTheme = ref<Themes>(props.themeName);
 
     const usedImagesReverse: WritableComputedRef<ImageCollection> = computed({
       get(): ImageCollection {
@@ -99,7 +100,20 @@ export default defineComponent({
       viewer.world.removeItem(viewer.world.getItemAt(index));
     }
 
+    function replaceThemeClass(themeName: Themes) {
+      const element = document.getElementById("cf-viewer-base");
+
+      if (themeName === Themes.base) {
+        return;
+      }
+      element?.classList.remove("base");
+      element?.classList.add(themeName);
+      return;
+    }
+
     onMounted(() => {
+      replaceThemeClass(usedTheme.value);
+
       viewer = OpenSeadragon({
         // TODO: Might cause trouble when using our component multiple times.
         id: 'openseadragon', 
