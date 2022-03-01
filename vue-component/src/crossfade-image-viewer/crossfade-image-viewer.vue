@@ -1,5 +1,5 @@
 <template>
-  <div class="crossfade-image-viewer base">
+  <div id="cf-viewer-base" class="crossfade-image-viewer base">
     <div id="openseadragon">
       <div class="overlay">
         <div class="control-menu">
