@@ -5,10 +5,59 @@
       display: flex;
       width: 100%;
       height: 100%;
+      background-color: $base-bg-color;
+
+      button {
+        background-color: $layer-control-bg-color;
+        border: none;
+        .rotated {
+          transform: rotate(180deg);
+        }
+      }
     
       .gallery {
+        z-index: 20;
         overflow-y: scroll;
-        width: auto;
+        width: 30em;
+        height: 100%;
+        background-color: $base-bg-color;
+        display: grid;
+        grid-auto-rows: 17em;
+        grid-template-columns: 1fr 1fr;
+        gap: 1em 1em;
+        justify-items: center;
+        align-items: center;
+        padding: 1em;
+        box-sizing: border-box;
+
+        .image-preview {
+          z-index: 20;
+          cursor: pointer;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          text-align:center;
+          word-break: break-word;
+        
+          .image {
+            overflow: hidden;
+            img {
+              -o-object-fit: cover;
+              object-fit: cover;
+              width: 100%;
+              height: 100%;
+            }
+          }
+        
+          .info {
+            margin: 0;
+            background-color: $layer-control-bg-color;
+            padding: .8rem;
+            color: $base-color;
+            border-top: 1px solid $base-color;
+          }
+        }
       }
       
       #openseadragon {
@@ -16,7 +65,6 @@
         width: 100%;
         height: 100%;
         z-index: 0;
-        background-color: $base-bg-color;
       }
         
       .overlay {
@@ -34,6 +82,11 @@
         align-items: center;
         pointer-events: none;
         
+        .nolayerinfo {
+          font-size: small;
+          padding-bottom: 1em;
+        }
+
         .control-menu {
           box-sizing: border-box;
           display: flex;
@@ -50,7 +103,7 @@
           gap: .5em;
           border-radius: 5px;
           box-shadow: $shadow-color 0px 2px 20px;
-          min-width: 300px;
+          width: 23em;
           
           .title {
             font-weight: 700;
@@ -133,4 +186,3 @@
 @include themable(cool, #020030, #00165e87, #004f837e, #fffc58, #ffffff, #0a0a0a3f);
 @include themable(pastel, #782b2e, #a4384ad0, #eec5d0c1, #13090b, #ffffff, #0a0a0a3f);
 @include themable(nice, rgb(247, 247, 247), rgb(29, 28, 28), #7f7a7ab6, rgb(247, 247, 247), #fff, #0a0a0a3f);
-
