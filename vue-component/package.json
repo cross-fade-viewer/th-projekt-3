@@ -1,7 +1,7 @@
 {
   "name": "@cross-fade-viewer/vue-component",
   "license": "BSD-3",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "keywords": ["viewer", "image", "crossfade", "vue"],
   "main": "dist/crossfade-image-viewer/crossfade-image-viewer.ssr.js",
