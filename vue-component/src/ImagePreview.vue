@@ -27,26 +27,27 @@ export default defineComponent({
 
 .image-preview {
   z-index: 20;
-  margin: 2em auto;
+  margin: 2em;
   cursor: pointer;
-  min-width: 20em;
-  width: 90%;
+  width: 10em;
   display: flex;
   flex-direction: column;
-  background-color: #222;
   text-align:center;
 
-  img {
-    display: block;
-    height: 100%;
-    width: 100%;
-    -o-object-fit: contain;
-    object-fit: contain;
+  .image {
+    height: 10em;
+    overflow: hidden;
+    img {
+      -o-object-fit: cover;
+      object-fit: cover;
+      height: 10em;
+      width: 10em;
+    }
   }
+
   .info {
     margin: 0;
     background-color: #444444;
-    flex-grow: 1;
     padding: .8rem;
     color: #fff;
     border-top: 1px solid #fff;
