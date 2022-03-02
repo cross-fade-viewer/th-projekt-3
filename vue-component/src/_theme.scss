@@ -1,0 +1,188 @@
+@mixin themable($theme-name, $base-bg-color, $layer-control-bg-color, $accent-bg-color, $accent-color, $base-color, $shadow-color) {
+    .crossfade-image-viewer.#{$theme-name} {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      box-sizing: border-box;
+      display: flex;
+      width: 100%;
+      height: 100%;
+      background-color: $base-bg-color;
+
+      button {
+        background-color: $layer-control-bg-color;
+        border: none;
+        .rotated {
+          transform: rotate(180deg);
+        }
+      }
+    
+      .gallery {
+        z-index: 20;
+        overflow-y: scroll;
+        width: 30em;
+        height: 100%;
+        background-color: $base-bg-color;
+        display: grid;
+        grid-auto-rows: 17em;
+        grid-template-columns: 1fr 1fr;
+        gap: 1em 1em;
+        justify-items: center;
+        align-items: center;
+        padding: 1em;
+        box-sizing: border-box;
+
+        .image-preview {
+          z-index: 20;
+          cursor: pointer;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          text-align:center;
+          word-break: break-word;
+        
+          .image {
+            overflow: hidden;
+            img {
+              -o-object-fit: cover;
+              object-fit: cover;
+              width: 100%;
+              height: 100%;
+            }
+          }
+        
+          .info {
+            margin: 0;
+            background-color: $layer-control-bg-color;
+            padding: .8rem;
+            color: $base-color;
+            border-top: 1px solid $base-color;
+          }
+        }
+      }
+      
+      #openseadragon {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+      }
+        
+      .overlay {
+        box-sizing: border-box;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 100px;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        pointer-events: none;
+        
+        .nolayerinfo {
+          font-size: small;
+          padding-bottom: 1em;
+        }
+
+        .control-menu {
+          box-sizing: border-box;
+          display: flex;
+          flex-direction: column;
+          color: $base-color;
+          pointer-events: all;
+          position: fixed;
+          z-index: 100;
+          bottom: 50px;
+          left: 50px;
+          background-color: $layer-control-bg-color;
+          backdrop-filter: blur(20px);
+          padding: 1em;
+          gap: .5em;
+          border-radius: 5px;
+          box-shadow: $shadow-color 0px 2px 20px;
+          width: 23em;
+          
+          .title {
+            font-weight: 700;
+            margin-bottom: 1em;
+          }
+      
+          .spacer {
+            flex-grow: 1;
+          }
+          .opacity-control {
+            display: flex;
+            gap: .5em;
+            input {
+              flex-grow: 1;
+            }
+          }
+        
+          .layer-control {
+            padding: .5em;
+            display: flex;
+            align-items: center;
+            transition: cubic-bezier(0.075, 0.82, 0.165, 1) all 1s;
+            border-radius: 3px;
+            gap: 1em;
+            cursor: grab;
+
+            button {
+              background-color: none;
+              border: none;
+              border-radius: none;
+              margin: 0;
+              padding: 0;
+              color: inherit;
+              background: none;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              cursor: pointer;
+            }
+        
+            &:hover {
+              background-color: $accent-bg-color;
+            }
+            &.selected {
+              color: $accent-color;
+              background-color: $accent-bg-color;
+            }
+          }
+        }
+        
+        .slider-container {
+          display: flex;
+          flex-direction: column-reverse;
+          width: 50%;
+      
+          .slider-group {
+            color: $base-color;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 1em;
+            pointer-events: all;
+            input {
+              flex-grow: 8;
+            }
+            span {
+              flex-grow: 2;
+            }
+            button {
+              flex-grow: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+@include themable(base, rgb(29, 28, 28), #33333396, #ffffff17, #0075FF, #fff, #0a0a0a3f);
+@include themable(joyful, #9eff85, #3f9b2c80, #006108, rgb(255, 132, 0), #ffffff, #0a0a0a3f);
+@include themable(cool, #020030, #00165e87, #004f837e, #fffc58, #ffffff, #0a0a0a3f);
+@include themable(pastel, #782b2e, #a4384ad0, #eec5d0c1, #13090b, #ffffff, #0a0a0a3f);
+@include themable(nice, rgb(247, 247, 247), rgb(29, 28, 28), #7f7a7ab6, rgb(247, 247, 247), #fff, #0a0a0a3f);

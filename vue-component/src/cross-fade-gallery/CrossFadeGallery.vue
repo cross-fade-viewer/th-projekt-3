@@ -11,5 +11,3 @@
 </template>
 
 <script src="./gallery-logic.ts" lang="ts"></script>
-
-<style src="./gallery-style.scss" lang="scss"></style>

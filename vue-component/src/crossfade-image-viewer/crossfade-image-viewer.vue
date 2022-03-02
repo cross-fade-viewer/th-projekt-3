@@ -1,5 +1,5 @@
 <template>
-  <div class="crossfade-image-viewer">
+  <div id="cf-viewer-base" class="crossfade-image-viewer base">
     <div id="openseadragon">
       <div class="overlay">
         <div class="control-menu">
@@ -39,4 +39,4 @@
 
 <script src="./logic.ts" lang="ts"></script>
 
-<style src="./style.scss" lang="scss"></style>
+<style src="./../_theme.scss" lang="scss"></style>

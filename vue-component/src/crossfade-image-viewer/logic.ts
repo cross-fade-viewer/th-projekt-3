@@ -1,7 +1,7 @@
 import { ref, onMounted, defineComponent, computed, WritableComputedRef } from 'vue';
 import OpenSeadragon from 'openseadragon';
 import draggable from 'vuedraggable';
-import { ImageCollection, Image, removeImageFromOneCollectionAndAddToAnother} from '../../../core/cross-fade-viewer-logic';
+import { ImageCollection, Image, removeImageFromOneCollectionAndAddToAnother, Theme } from '../../../core/cross-fade-viewer-logic';
 import LayerControl from '../LayerControl.vue';
 import ImagePreview from '../ImagePreview.vue';
 import CrossFadeGallery from '../cross-fade-gallery/CrossFadeGallery.vue';
@@ -27,6 +27,7 @@ export default defineComponent({
       // TODO: Translate to english and make text more general.
       default: 'Du hast alle Bildebenen entfernt. Füge neue hinzu, indem du auf das (+) Symbol in der oberen rechten Ecke klickst.'
     },
+    themeName: { type: String, default: Theme.base},
   },
   setup(props: Data) {
     let viewer : OpenSeadragon.Viewer;
@@ -36,6 +37,7 @@ export default defineComponent({
     const displayedOpacity = ref<number>(1);
     const unusedImages = ref<ImageCollection>(props.availableImages);
     const usedImages = ref<ImageCollection>(props.displayedImages);
+    const usedTheme = ref<Theme>(props.themeName);
 
     const usedImagesReverse: WritableComputedRef<ImageCollection> = computed({
       get(): ImageCollection {
@@ -98,7 +100,20 @@ export default defineComponent({
       viewer.world.removeItem(viewer.world.getItemAt(index));
     }
 
+    function replaceThemeClass(themeName: Theme) {
+      const element = document.getElementById("cf-viewer-base");
+
+      if (themeName === Theme.base) {
+        return;
+      }
+      element?.classList.remove("base");
+      element?.classList.add(themeName);
+      return;
+    }
+
     onMounted(() => {
+      replaceThemeClass(usedTheme.value);
+
       viewer = OpenSeadragon({
         // TODO: Might cause trouble when using our component multiple times.
         id: 'openseadragon', 

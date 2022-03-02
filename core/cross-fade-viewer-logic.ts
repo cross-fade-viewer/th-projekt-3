@@ -8,6 +8,14 @@ export type Image = {
   opacity: number,
 }
 
+export enum Theme {
+  base = 'base',
+  cool = 'cool',
+  joyful = 'joyful',
+  nice = 'nice',
+  pastel = 'pastel',
+}
+
 export function prependImageToImageCollection(image: Image, collection: ImageCollection): ImageCollection {
   return [{...image}, ...collection]
 }
