@@ -2,7 +2,7 @@
 import { defineComponent } from 'vue';
 import CrossfadeImageViewer from '@/crossfade-image-viewer/crossfade-image-viewer.vue';
 import CrossFadeGallery from '@/cross-fade-gallery/CrossFadeGallery.vue';
-import { ImageCollection, Themes } from '../../core/cross-fade-viewer-logic';
+import { ImageCollection, Theme } from '../../core/cross-fade-viewer-logic';
 
 export default defineComponent({
   name: 'ServeDev',
@@ -19,7 +19,7 @@ export default defineComponent({
     let displayedImages: ImageCollection = [
       {title: 'Some Title D', sourceUrl: 'https://i.picsum.photos/id/398/1500/1800.jpg?hmac=arRnFqZvf1PoJpNYzznhdOMx9veRHgTcyf3mM2wxFpY', opacity: 1},
     ]
-    let usedTheme: Themes = Themes.pastel;
+    let usedTheme: Theme = Theme.base;
     return { availableImages, displayedImages, usedTheme };
   },
 });
