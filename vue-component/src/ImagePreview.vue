@@ -33,6 +33,7 @@ export default defineComponent({
   display: flex;
   flex-direction: column;
   text-align:center;
+  word-break: break-word;
 
   .image {
     overflow: hidden;
