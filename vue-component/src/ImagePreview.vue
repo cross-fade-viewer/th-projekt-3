@@ -27,21 +27,20 @@ export default defineComponent({
 
 .image-preview {
   z-index: 20;
-  margin: 2em;
   cursor: pointer;
-  width: 10em;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   text-align:center;
 
   .image {
-    height: 10em;
     overflow: hidden;
     img {
       -o-object-fit: cover;
       object-fit: cover;
-      height: 10em;
-      width: 10em;
+      width: 100%;
+      height: 100%;
     }
   }
 
@@ -51,7 +50,6 @@ export default defineComponent({
     padding: .8rem;
     color: #fff;
     border-top: 1px solid #fff;
-    background-color: #444;
   }
 }
 </style>
