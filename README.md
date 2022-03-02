@@ -1,6 +1,6 @@
 # Projekt III: Crossfade Image Viewer
 
-Aufbauend auf der Vision &amp; Konzept, sowie eines "minimal viable product" vorangegangener Semester, soll in diesem Projekt eine Auswertung bzw. Verwertung stattfinden. Dabei kann die Auswertung bzw. Verwertung verschiedenes umfassen, wie eine Evaluation, Weiterentwicklung in Richtung Produktreife, Hinarbeiten auf eine Forschungsveröffentlichung oder für die Open Source Community.  Das Projekt besteht aus zwei Teilen: Einem Projektanteil (6 CP) der vom jeweiligen Projectowner geleitet wird und einem Vertiefungsworkshop (6 CP), der zu Beginn des Semesters in Absprache mit dem Projectowner gewählt wird (nähere Informationen finden sich auch weiter unten im jeweiligen Semesterordner).
+Aufbauend auf der Vision &amp; Konzept, sowie eines "minimal viable product" vorangegangener Semester, soll in diesem Projekt eine Auswertung bzw. Verwertung stattfinden. Dabei kann die Auswertung bzw. Verwertung verschiedenes umfassen, wie eine Evaluation, Weiterentwicklung in Richtung Produktreife, Hinarbeiten auf eine Forschungsveröffentlichung oder für die Open Source Community.  Das Projekt besteht aus zwei Teilen: Einem Projektanteil (6 CP) der vom jeweiligen Projectowner geleitet wird und einem Vertiefungsworkshop (6 CP), der zu Beginn des Semesters in Absprache mit dem Projectowner, Prof. Noss, gewählt wird. Nähere Informationen dazu finden sich auch weiter unten im jeweiligen Projekt- bzw. Semesterordner bei Ilias.
 
 -----------------
 
@@ -21,8 +21,8 @@ Der aus Projekt I entstandende [Prototyp](https://www.figma.com/proto/Jbh4haqz3F
 Eine detaillierte Dokumentation der einzelnen Projektergebnisse, Entscheidungen und Standards findest du unter [/docs](./docs/README.md).
 
 
-## Starten des CCF-Moduls
-Der einfachste Weg eine eigene Version des CCF-Moduls zu starten ist per [Docker](https://docs.docker.com/get-started/overview/) und [Docker Compose](https://docs.docker.com/compose/). Dafür benötigst du ausschließlich eine [Installation von Docker](https://docs.docker.com/get-docker/) und eine [Installation von Docker Compose](https://docs.docker.com/compose/install/), den Rest stellen wir dir bereit. Führe im Anschluss einfach folgende Schritte aus:
+## Starten des Projektes
+Führe für den Start des Projektes folgende Schritte aus:
 
 ```bash
 # 1. Repository klonen
