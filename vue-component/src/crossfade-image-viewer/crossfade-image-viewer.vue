@@ -28,7 +28,9 @@
         </div>
       </div>
     </div>
-    <button @click="showGallery = !showGallery" v-if="integratedGallery">+</button>
+    <button @click="showGallery = !showGallery" v-if="integratedGallery">
+      <img v-bind:class="showGallery ? 'rotated' : '' " src="./arrow.svg">
+    </button>
     <div class="gallery-container">
       <cross-fade-gallery :images="unusedImages" v-show="showGallery" @useImage="onUseImage"/>
     </div>
