@@ -16,6 +16,9 @@
             </draggable>
           </div>
           <div class="spacer"></div>
+          <div class="nolayerinfo" v-show="usedImages.length < 1">
+            {{noImageText}}
+          </div>
           <div class="opacity-control">
             <img src="./opacity-low.svg">
             <input v-if="selectedLayerIndex !== undefined && usedImages.length" type="range" min="0" max="1" step="0.01" @input="sliderChanged" v-model="displayedOpacity">
@@ -23,13 +26,12 @@
             <img src="./opacity-high.svg">
           </div>
         </div>
-        <div class="nolayerinfo" v-show="usedImages.length < 1" style="color: white;">
-          {{noImageText}}
-        </div>
       </div>
     </div>
-    <button @click="showGallery = !showGallery" v-if="integratedGallery">👁</button>
-    <div class="gallery">
+    <button @click="showGallery = !showGallery" v-if="integratedGallery">
+      <img v-bind:class="showGallery ? 'rotated' : '' " src="./arrow.svg">
+    </button>
+    <div class="gallery-container">
       <cross-fade-gallery :images="unusedImages" v-show="showGallery" @useImage="onUseImage"/>
     </div>
   </div>
