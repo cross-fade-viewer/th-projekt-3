@@ -26,37 +26,31 @@ export default defineComponent({
 <style lang="scss" scoped>
 
 .image-preview {
+  z-index: 20;
   cursor: pointer;
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
-  background-color: #222;
+  text-align:center;
+  word-break: break-word;
+
   .image {
-    position: relative;
-    height: 100%;
-    background-color: rgba(0,0,0,.04);
+    overflow: hidden;
+    img {
+      -o-object-fit: cover;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
   }
-  img {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    display: block;
-    width: 100%;
-    height: 100%;
-    -o-object-fit: contain;
-    object-fit: contain;
-  }
+
   .info {
     margin: 0;
     background-color: #444444;
-    flex-grow: 1;
     padding: .8rem;
-    color: #f2f2f2;
-    border-top: 1px solid #fc0;
-    background-color: #444;
+    color: #fff;
+    border-top: 1px solid #fff;
   }
 }
 </style>
