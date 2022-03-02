@@ -39,4 +39,4 @@
 
 <script src="./logic.ts" lang="ts"></script>
 
-<style src="./_theme.scss" lang="scss"></style>
+<style src="./../_theme.scss" lang="scss"></style>
