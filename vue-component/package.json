@@ -3,7 +3,12 @@
   "license": "BSD-3",
   "version": "1.0.2",
   "description": "",
-  "keywords": ["viewer", "image", "crossfade", "vue"],
+  "keywords": [
+    "viewer",
+    "image",
+    "crossfade",
+    "vue"
+  ],
   "main": "dist/crossfade-image-viewer/crossfade-image-viewer.ssr.js",
   "browser": "dist/crossfade-image-viewer/crossfade-image-viewer.esm.js",
   "module": "dist/crossfade-image-viewer/crossfade-image-viewer.esm.js",
@@ -25,6 +30,7 @@
     "test": "jest"
   },
   "dependencies": {
+    "@cross-fade-viewer/core": "^0.0.1",
     "openseadragon": "^2.4.2",
     "vuedraggable": "^4.1.0"
   },
