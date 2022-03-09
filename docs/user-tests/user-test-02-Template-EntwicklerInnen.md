@@ -26,25 +26,23 @@ Sofern daneben noch weitere Funktionen getestet wurden, würden wir Sie darum bi
 
 
 ## User-Test 
-
-| **Aufgaben**                              	| Funktioniert 	| Nicht funktioniert 	| Bemerkungen 	|
-|-------------------------------------------	|--------------	|--------------------	|-------------	|
-
-| Beispielprojekt herunterladen |              	|                    	|             	|
-| Vue-Komponente cross-fade-viewer installieren |              	|                    	|             	|
-| CFV in UI einbinden |              	|                    	|             	|
-| Einfügen von eigenen Bilder |              	|                    	|             	|
-| Theme auswählen |              	|                    	|             	|
-| Anpassen des "Keine Bilder da"-Textes |              	|                    	|             	|
-| Ausblenden der Galerie  |              	|                    	|             	|
-| Design und Farbe von der Anwendung ändern 	|              	|                    	|             	|
-| Anpassung des Textes                       	|              	|                    	|             	|
-| Nutzung aller Elemente ohne Galerie                     	|              	|                    	|             	|
-| Bilderebenen auswählen/löschen/hinzufügen 	|              	|                    	|             	|
-| Zoomen                                    	|              	|                    	|             	|
-| Transparentseinstellungen für jede Ebene ändern |              	|                    	|             	|
-| Einstellungen der Bilder ändern           	|              	|                    	|             	|
-| ... | ... | ... | ... |
+| **Aufgaben**                                    	| Funktioniert 	| Nicht funktioniert 	| Bemerkungen 	|
+|-------------------------------------------------	|--------------	|--------------------	|-------------	|
+| Beispielprojekt herunterladen                   	|              	|                    	|             	|
+| Vue-Komponente cross-fade-viewer installieren   	|              	|                    	|             	|
+| CFV in UI einbinden                             	|              	|                    	|             	|
+| Einfügen von eigenen Bilder                     	|              	|                    	|             	|
+| Theme auswählen                                 	|              	|                    	|             	|
+| Anpassen des "Keine Bilder da"-Textes           	|              	|                    	|             	|
+| Ausblenden der Galerie                          	|              	|                    	|             	|
+| Design und Farbe von der Anwendung ändern       	|              	|                    	|             	|
+| Anpassung des Textes (keine Bilder ausgewählt)  	|              	|                    	|             	|
+| Nutzung aller Elemente ohne Galerie             	|              	|                    	|             	|
+| Bilderebenen auswählen/löschen/hinzufügen       	|              	|                    	|             	|
+| Zoomen                                          	|              	|                    	|             	|
+| Transparentseinstellungen für jede Ebene ändern 	|              	|                    	|             	|
+| Einstellungen der Bilder ändern                 	|              	|                    	|             	|
+| ...                                             	| ...          	| ...                	| ...         	|
 
 
 **Bitte beantworten Sie auch folgende Fragen:**
