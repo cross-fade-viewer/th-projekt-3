@@ -33,6 +33,7 @@ export default defineComponent({
     let viewer : OpenSeadragon.Viewer;
 
     const showGallery = ref<boolean>(false);
+    const isControlMenuMinimized = ref<boolean>(false);
     const selectedLayerIndex = ref<number|undefined>();
     const displayedOpacity = ref<number>(1);
     const unusedImages = ref<ImageCollection>(props.availableImages);
@@ -146,7 +147,8 @@ export default defineComponent({
       displayedOpacity,
       onLayerMoved,
       usedImagesReverse,
-      reverseIndexOfArray
+      reverseIndexOfArray,
+      isControlMenuMinimized
     };
   },
 });
