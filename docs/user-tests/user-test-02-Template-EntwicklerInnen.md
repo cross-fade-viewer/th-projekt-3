@@ -12,36 +12,29 @@ Sofern daneben noch weitere Funktionen getestet wurden, würden wir Sie darum bi
 1) Beispielprojekt herunterladen (clonen)
 2) Vue-Komponente cross-fade-viewer (CFV) installieren
 3) CFV in UI einbinden
-4) Einfügen von eigenen Bilder (Bild-URLs)
-5) Theme auswählen
-6) Anpassen des "Keine Bilder da"-Textes
+4) Einfügen von eigenen Bildern (Bild-URLs)
+5) Design und Farbe von der Anwendung ändern
+6) Anpassung des Textes (keine Bilder ausgewählt)
 7) Ausblenden der Galerie
-8) Design und Farbe von der Anwendung ändern
-9) Anpassung des Textes (keine Bilder ausgewählt)
-10) Nutzung aller Elemente ohne Galerie 
-11) Bilderebenen auswählen/löschen/hinzufügen
-12) Zoomen
-13) Transparentseinstellungen für jede Ebene ändern
-14) Einstellungen der Bilder ändern
+8) Nutzung aller Elemente mit ausgeblendeter Galerie 
+9) Bilderebenen auswählen/löschen/hinzufügen
+10) Zoomen
+11) Transparentseinstellungen für jede Ebene ändern
 
 
-## User-Test 
 | **Aufgaben**                                    	| Funktioniert 	| Nicht funktioniert 	| Bemerkungen 	|
 |-------------------------------------------------	|--------------	|--------------------	|-------------	|
 | Beispielprojekt herunterladen                   	|              	|                    	|             	|
 | Vue-Komponente cross-fade-viewer installieren   	|              	|                    	|             	|
 | CFV in UI einbinden                             	|              	|                    	|             	|
-| Einfügen von eigenen Bilder                     	|              	|                    	|             	|
-| Theme auswählen                                 	|              	|                    	|             	|
-| Anpassen des "Keine Bilder da"-Textes           	|              	|                    	|             	|
-| Ausblenden der Galerie                          	|              	|                    	|             	|
+| Einfügen von eigenen Bildern                     	|              	|                    	|             	|
 | Design und Farbe von der Anwendung ändern       	|              	|                    	|             	|
 | Anpassung des Textes (keine Bilder ausgewählt)  	|              	|                    	|             	|
-| Nutzung aller Elemente ohne Galerie             	|              	|                    	|             	|
+| Ausblenden der Galerie                          	|              	|                    	|             	|
+| Nutzung aller Elemente mit ausgeblendeter Galerie             	|              	|                    	|             	|
 | Bilderebenen auswählen/löschen/hinzufügen       	|              	|                    	|             	|
 | Zoomen                                          	|              	|                    	|             	|
 | Transparentseinstellungen für jede Ebene ändern 	|              	|                    	|             	|
-| Einstellungen der Bilder ändern                 	|              	|                    	|             	|
 | ...                                             	| ...          	| ...                	| ...         	|
 
 
