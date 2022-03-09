@@ -1,6 +1,6 @@
-# User-Test für Anwender
+# User-Test für AnwenderInnen
 
-**Tester:**
+**Testperson:**
 
 **Datum:**
 
@@ -13,6 +13,7 @@ Sofern daneben noch weitere Funktionen getestet wurden, würden wir Sie darum bi
 2) Bilderebenen auswählen/löschen/hinzufügen
 3) Zoomen
 4) Transparentseinstellungen für jede Ebene ändern
+5) Verschiedene Ansichten ausprobiert
 
 ## User-Test 
 
@@ -22,6 +23,7 @@ Sofern daneben noch weitere Funktionen getestet wurden, würden wir Sie darum bi
 | Bilderebenen auswählen/löschen/hinzufügen 	|              	|                    	|             	|
 | Zoomen                                    	|              	|                    	|             	|
 | Transparentseinstellungen für jede Ebene ändern  	|              	|                    	|             	|
+| Verschiedene Ansichten 	|              	|                    	|             	|
 |  |              	|                    	|             	|
 |  |              	|                    	|             	|
 |  |              	|                    	|             	|
