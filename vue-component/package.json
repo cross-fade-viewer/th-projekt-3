@@ -32,6 +32,7 @@
   "dependencies": {
     "@cross-fade-viewer/core": "^0.0.1",
     "openseadragon": "^2.4.2",
+    "sass": "^1.49.9",
     "vuedraggable": "^4.1.0"
   },
   "devDependencies": {
@@ -55,7 +56,6 @@
     "cross-env": "^7.0.3",
     "jest": "^27.4.3",
     "minimist": "^1.2.5",
-    "node-sass": "^6.0.1",
     "postcss": "^8.2.10",
     "rimraf": "^3.0.2",
     "rollup": "^2.52.8",
