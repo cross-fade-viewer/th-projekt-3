@@ -1,6 +1,6 @@
-# User-Test für Entwickler
+# User-Test für EntwicklerInnen
 
-**Tester:**
+**Testperson:**
 
 **Datum:**
 
@@ -16,6 +16,9 @@ Sofern daneben noch weitere Funktionen getestet wurden, würden wir Sie darum bi
 5) Einstellungen der Bilder ändern
 6) Komponenten hinzufügen/löschen
 7) Design und Farbe von der Anwendung ändern
+8) Einfügen eigener Bilder in die Galerie
+9) Anpassung des Textes (keine Bilder ausgewählt)
+10) Nutzung aller Elemente ohne Galerie 
 
 
 ## User-Test 
@@ -29,6 +32,9 @@ Sofern daneben noch weitere Funktionen getestet wurden, würden wir Sie darum bi
 | Einstellungen der Bilder ändern           	|              	|                    	|             	|
 | Komponenten hinzufügen/löschen            	|              	|                    	|             	|
 | Design und Farbe von der Anwendung ändern 	|              	|                    	|             	|
+| Einfügen eigener Bilder in die Galerie                         	|              	|                    	|             	|
+| Anpassung des Textes                       	|              	|                    	|             	|
+| Nutzung aller Elemente ohne Galerie                     	|              	|                    	|             	|
 |  |              	|                    	|             	|
 |  |              	|                    	|             	|
 |  |              	|                    	|             	|
@@ -42,8 +48,11 @@ Sofern daneben noch weitere Funktionen getestet wurden, würden wir Sie darum bi
 - Waren die Komponenten erkennbar?
 - Wurden Anleitungen benötigt?  
 - Was sollte eventuell geändert werden?
+- Wie würden Sie die Komponenten gerne nutzen?
+- Wie würden Sie die Komponente in ein Softwareprojekt implementieren?
 - Hätten Sie sich noch Funktionen gewünscht? Wenn ja, welche?
 - Hätten Sie sich noch etwas anderes gewünscht? Wenn ja, was?
+- Wie würden Sie die Komponenten gerne nutzen?
 
 
 
