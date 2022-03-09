@@ -1,3 +1,7 @@
+* {
+  transition: all cubic-bezier(0.075, 0.82, 0.165, 1) .2s;
+}
+
 @mixin themable($theme-name, $base-bg-color, $layer-control-bg-color, $accent-bg-color, $accent-color, $base-color, $shadow-color) {
     .crossfade-image-viewer.#{$theme-name} {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -13,6 +17,13 @@
         .rotated {
           transform: rotate(180deg);
         }
+      }
+      
+      .rotated-270 {
+        transform: rotate(270deg);
+      }
+      .rotated-90 {
+        transform: rotate(90deg);
       }
     
       .gallery {
@@ -95,19 +106,35 @@
           pointer-events: all;
           position: fixed;
           z-index: 100;
-          bottom: 50px;
-          left: 50px;
+          bottom: 0;
+          left: 0;
           background-color: $layer-control-bg-color;
           backdrop-filter: blur(20px);
-          padding: 1em;
-          gap: .5em;
-          border-radius: 5px;
+          padding: 1.5em;
+          gap: 1em;
+          border-radius: 0px;
           box-shadow: $shadow-color 0px 2px 20px;
-          width: 23em;
+          width: 100vw;
           
+          .controls {
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+          }
+
+          @media only screen and (min-width: 600px) {
+            padding: 1em;
+            width: 23em;
+            bottom: 3em;
+            left: 3em;
+          }
+
           .title {
             font-weight: 700;
-            margin-bottom: 1em;
+            display: flex;
+            div {
+              flex-grow: 1;
+            }
           }
       
           .spacer {
@@ -129,6 +156,9 @@
             border-radius: 3px;
             gap: 1em;
             cursor: grab;
+            .layer-text {
+              flex-grow: 1;
+            }
 
             button {
               background-color: none;
