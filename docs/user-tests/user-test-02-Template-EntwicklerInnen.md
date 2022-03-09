@@ -48,7 +48,6 @@ Sofern daneben noch weitere Funktionen getestet wurden, würden wir Sie darum bi
 - Wie würden Sie die Komponente in ein Softwareprojekt implementieren?
 - Hätten Sie sich noch Funktionen gewünscht? Wenn ja, welche?
 - Hätten Sie sich noch etwas anderes gewünscht? Wenn ja, was?
-- Wie würden Sie die Komponenten gerne nutzen?
 
 
 
