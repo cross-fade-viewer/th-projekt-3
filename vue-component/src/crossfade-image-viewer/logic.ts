@@ -1,7 +1,7 @@
 import { ref, onMounted, defineComponent, computed, WritableComputedRef } from 'vue';
 import OpenSeadragon from 'openseadragon';
 import draggable from 'vuedraggable';
-import { ImageCollection, Image, removeImageFromOneCollectionAndAddToAnother, Theme } from '../../../core/cross-fade-viewer-logic';
+import { ImageCollection, Image, removeImageFromOneCollectionAndAddToAnother, Theme } from '@cross-fade-viewer/core';
 import LayerControl from '../LayerControl.vue';
 import ImagePreview from '../ImagePreview.vue';
 import CrossFadeGallery from '../cross-fade-gallery/CrossFadeGallery.vue';
