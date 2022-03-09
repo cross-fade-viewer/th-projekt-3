@@ -16,15 +16,13 @@ Sofern daneben noch weitere Funktionen getestet wurden, würden wir Sie darum bi
 5) Theme auswählen
 6) Anpassen des "Keine Bilder da"-Textes
 7) Ausblenden der Galerie
-8) Komponenten hinzufügen/löschen
-9) Design und Farbe von der Anwendung ändern
-10) Einfügen eigener Bilder in die Galerie
-11) Anpassung des Textes (keine Bilder ausgewählt)
-12) Nutzung aller Elemente ohne Galerie 
-13) Bilderebenen auswählen/löschen/hinzufügen
-14) Zoomen
-15) Transparentseinstellungen für jede Ebene ändern
-16) Einstellungen der Bilder ändern
+8) Design und Farbe von der Anwendung ändern
+9) Anpassung des Textes (keine Bilder ausgewählt)
+10) Nutzung aller Elemente ohne Galerie 
+11) Bilderebenen auswählen/löschen/hinzufügen
+12) Zoomen
+13) Transparentseinstellungen für jede Ebene ändern
+14) Einstellungen der Bilder ändern
 
 
 ## User-Test 
@@ -39,9 +37,7 @@ Sofern daneben noch weitere Funktionen getestet wurden, würden wir Sie darum bi
 | Theme auswählen |              	|                    	|             	|
 | Anpassen des "Keine Bilder da"-Textes |              	|                    	|             	|
 | Ausblenden der Galerie  |              	|                    	|             	|
-| Komponenten hinzufügen/löschen            	|              	|                    	|             	|
 | Design und Farbe von der Anwendung ändern 	|              	|                    	|             	|
-| Einfügen eigener Bilder in die Galerie                         	|              	|                    	|             	|
 | Anpassung des Textes                       	|              	|                    	|             	|
 | Nutzung aller Elemente ohne Galerie                     	|              	|                    	|             	|
 | Bilderebenen auswählen/löschen/hinzufügen 	|              	|                    	|             	|
