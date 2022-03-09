@@ -20,8 +20,8 @@ Sofern daneben noch weitere Funktionen getestet wurden, würden wir Sie darum bi
 |-------------------------------------------	|--------------	|--------------------	|-------------	|
 | Bilderebenen auswählen/löschen/hinzufügen 	|              	|                    	|             	|
 | Zoomen                                    	|              	|                    	|             	|
-| Transparentseinstellungen für jede Ebene ändern  	|              	|                    	|             	|
-| Verschiedene Ansichten 	|              	|                    	|             	|
+| Transparentseinstellungen für jede Ebene  	|              	|                    	|             	|
+| Verschiedene Ansichten  	|              	|                    	|             	|
 | ... | ... | ... | ... |
 
 **Bitte beantworten Sie auch folgende Fragen:**
