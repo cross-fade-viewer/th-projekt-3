@@ -37,6 +37,7 @@ Sofern daneben noch weitere Funktionen getestet wurden, würden wir Sie darum bi
 
 - **Was sollte eventuell geändert werden?**
   - Anstelle die Zoom-Bewegung durch scrollen auszulösen, könnten noch zusätzlich +/- Buttons an der Seite der Bilder erscheinen, um das Zoomen dadurch zu bedienen. Insbesondere bei der mobilen Benutzung würde dies sehr hilfreich sein.
+  - Der Text (der bei der Abwahl aller Bilder erscheint) mit den "+"-Symbol sollte geändert werden.
 
 - **Hätten Sie sich noch Funktionen gewünscht? Wenn ja, welche?**
   - Die Bilder nebeneinander stellen zu können
