@@ -41,6 +41,7 @@ Sofern daneben noch weitere Funktionen getestet wurden, würden wir Sie darum bi
 
 - **Hätten Sie sich noch Funktionen gewünscht? Wenn ja, welche?**
   - Die Bilder nebeneinander stellen zu können
+  - Die Bilder können nur durch Mausklick von der Galerie ins Feld gelangen. Es ist nicht möglich, dass sich die Bilder von der Galerie ins Feld durch die Maus "ziehen" lassen. Dies wäre noch eine wünschenswerte Funktion
 
 - **Hätten Sie sich noch etwas anderes gewünscht? Wenn ja, was?**
   - Es wird nichts weiteres gewünscht, denn die Anwendung war gut, verständlich sowie ansprechend.
