@@ -6,7 +6,7 @@
 # This workflow will install Deno then run Deno lint and test.
 # For more information see: https://github.com/denoland/setup-deno
 
-name: Test
+name: Test Component
 
 on:
   push:
@@ -54,18 +54,6 @@ jobs:
     steps:
       - name: Setup repo
         uses: actions/checkout@v2
-
-      - name: Setup Deno
-        # uses: denoland/setup-deno@v1
-        uses: denoland/setup-deno@004814556e37c54a2f6e31384c9e18e983317366
-        with:
-          deno-version: v1.x
-
-      - name: Run Deno tests in ./core
-        run: deno test ./core --unstable --coverage=cov_profile
-
-      - name: Check Deno Test Coverage
-        run: deno coverage cov_profile
 
       - name: Setup Node.js
         uses: actions/setup-node@v1
