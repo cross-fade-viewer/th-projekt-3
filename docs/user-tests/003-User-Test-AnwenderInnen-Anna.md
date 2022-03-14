@@ -19,7 +19,7 @@ Sofern daneben noch weitere Funktionen getestet wurden, würden wir Sie darum bi
 | **Aufgaben**                              	| Funktioniert 	| Nicht funktioniert 	| Bemerkungen 	|
 |-------------------------------------------	|--------------	|--------------------	|-------------	|
 | Bilderebenen auswählen/löschen/hinzufügen 	|        x      	|                    	|             	|
-| Zoomen                                    	|          x    	|                    	|  Zoomen startete automatisch, lag aber vermutlich an der Maus. Nutzung des Zooms ging nicht über Trackpad, was jedoch vermutlich mit den Fernzugriff zusammen hängt           	|
+| Zoomen                                    	|          x    	|                    	|  Zoom startete automatisch, lag aber vermutlich an der Maus. Nutzung des Zooms ging nicht über Trackpad, was jedoch vermutlich mit dem Fernzugriff zusammen hängt           	|
 | Transparentseinstellungen für jede Ebene  	|          x    	|                    	|             	|
 | Verschiedene Ansichten  	|       x       	|                    	|             	|
 | Layer Text anzeigen lassen, alle Bilder abwählen | x |  |  |
