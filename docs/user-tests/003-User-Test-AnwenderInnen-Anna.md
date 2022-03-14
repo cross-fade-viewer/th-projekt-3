@@ -1,6 +1,6 @@
 # User-Test für AnwenderInnen
 
-**Testperson:** Anna Sulbach
+**Testperson:** Anna Subach
 
 **Datum:** 10.03.2022
 
@@ -27,7 +27,7 @@ Sofern daneben noch weitere Funktionen getestet wurden, würden wir Sie darum bi
 **Bitte beantworten Sie auch folgende Fragen:**
 
 - **War die Anwendug selbsterklärend?**
-  - Die Anwendung war selbsterklärend und deutlich. Durch selber ausprobieren kann man die Anwendung zudem sehr gut kennenlernen.
+  - Die Anwendung war selbsterklärend und deutlich. Durch selbstständiges Ausprobieren kann man die Anwendung zudem sehr gut kennenlernen.
 
 - **Waren die Komponenten erkennbar?**
   - Die Komponenten waren erkennbar.
@@ -36,7 +36,7 @@ Sofern daneben noch weitere Funktionen getestet wurden, würden wir Sie darum bi
   - Bis auf die Erklärung einer Aufgabenstellung wurde keine weitere Hilfe benötigt.
 
 - **Was sollte eventuell geändert werden?**
-  - Anstelle die Zoom-Bewegung durch scrollen auszulösen, könnten noch zusätzlich +/- Buttons an der Seite der Bilder erscheinen, um das Zoomen dadurch zu bedienen. Insbesondere bei der mobilen Benutzung würde dies sehr hilfreich sein.
+  - Statt die Zoom-Bewegung durch Scrollen auszulösen, könnten noch zusätzlich +/- Buttons an der Seite der Bilder erscheinen, um das Zoomen dadurch zu bedienen.     Insbesondere bei der mobilen Benutzung könnte dies sehr hilfreich sein.
   - Der Text (der bei der Abwahl aller Bilder erscheint) mit den "+"-Symbol sollte geändert werden.
 
 - **Hätten Sie sich noch Funktionen gewünscht? Wenn ja, welche?**
