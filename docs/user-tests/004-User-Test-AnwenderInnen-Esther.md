@@ -40,7 +40,7 @@ Sofern daneben noch weitere Funktionen getestet wurden, würden wir Sie darum bi
    - Der Text (der bei der Abwahl aller Bilder erscheint) mit den "+"-Symbol sollte geändert werden.
 
 - **Hätten Sie sich noch Funktionen gewünscht? Wenn ja, welche?**
-  - Bilder anstelle übereinander, nebeneinander stellen. Somit könnten die Bilder auch direkt verglichen werden.
+  - Bilder statt übereinander nebeneinander zu stellen. Somit könnten die Bilder auch direkt verglichen werden.
 
 - **Hätten Sie sich noch etwas anderes gewünscht? Wenn ja, was?**
   - Es wird nichts weiteres gewünscht.
