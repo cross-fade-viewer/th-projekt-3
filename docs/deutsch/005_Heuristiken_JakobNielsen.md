@@ -1,4 +1,4 @@
-## Heuristiken von Jakob Nielsen
+# Heuristiken von Jakob Nielsen
 
 Bei der Erstellung unserer Anwendung haben wir uns an die 10 Heuristiken von Jakob Nielsen orientiert, um das User Interface zu gestalten und somit ein benutzerfreundliches Design zu erschaffen.
 
@@ -15,6 +15,6 @@ Diese 10 Heuristiken wären:
 9. Hilfestellung beim Erkennen, Bewerten und Beheben von Fehlern
 10. Hilfe und Dokumentation 
 
-Nähere Erklärungen zu den einzelnen Heuristiken können beispielsweise hier gefunden werden:
+Nähere Erklärungen zu den einzelnen Heuristiken können beispielsweise in diesem Buch gefunden werden:
 
-- https://userinterfacedesign.ch/design-methode-heuristische-evaluation/
+Nielsen, Jakob (1994): Usability Engineering, San Francisco, United States: Morgan Kaufmann.
