@@ -1,4 +1,4 @@
-## User Guide 
+# User Guide 
 
 In diesem User-Guide finden Sie Erklärungen zur Komponente sowie Bedienungshinweise.
 

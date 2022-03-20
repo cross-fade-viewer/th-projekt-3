@@ -1,5 +1,7 @@
 # Auswahl eines Komponenten-fähigen Frameworks für die erste Veröffentlichung
 
+Datum: 08.12.2021
+
 ## Einleitung
 
 * Zusammenfassung

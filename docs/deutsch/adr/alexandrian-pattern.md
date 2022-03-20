@@ -1,5 +1,6 @@
 # ADR template für das Alexandrian pattern
 
+Datum: tt.mm.jjjj
 ## Einleitung
 
 * Zusammenfassung
