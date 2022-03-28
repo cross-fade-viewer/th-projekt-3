@@ -1,6 +1,12 @@
 # Designentscheidungen
 
-Auf Grundlage von Projekt 2 entstanden verschiedene Entwürfe mittels Figma. Ausgehend von diesen Entwürfen wurde das Design unter der Berücksichtigung verschiedener Einsatzmöglichkeiten stetig weiterentwickelt. 
+Auf Grundlage von Projekt 2 entstanden verschiedene Entwürfe mittels Figma. 
+
+Für diese Entwürfe wurden verschiedene Einsatzmöglichkeiten unserer Komponente in Betracht gezogen:
+- Wie sähe es in einer kleineren bzw. mobilen Ansicht aus?
+- Soll man die Galerie getrennt einbauen können?
+- Was, wenn mehrere Instanzen der Komponente vorkommen sollen?
+Ausgehend von diesen Entwürfen wurde das Design unter der Berücksichtigung verschiedener Einsatzmöglichkeiten stetig weiterentwickelt. 
 
 ![Redesign](pictures/Redesign.png)
 
