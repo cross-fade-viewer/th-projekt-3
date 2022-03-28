@@ -1,6 +1,13 @@
 # Design decisions
 
-Based on project 2, various designs were created using Figma. Based on these drafts, the design was constantly developed further, taking into account various possible uses. 
+Based on project 2, various designs were created using Figma. 
+For these drafts several different scenarios of usage for our component were taken into account:
+
+- How would it look like in a smaller or mobile view?
+- Should the gallery be able to be built in separately?
+- What if several instances of the component are implemented?
+Based on these drafts, the design was constantly developed further, taking into account various possible uses. 
+
 
 ![Redesign](pictures/Redesign.png)
 
