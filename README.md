@@ -18,7 +18,7 @@ Der aus Projekt I entstandende [Prototyp](https://www.figma.com/proto/Jbh4haqz3F
 
 
 ## Dokumentation
-Eine detaillierte Dokumentation der einzelnen Projektergebnisse, Entscheidungen und Standards findest du unter [/docs](./docs/README.md).
+Eine detaillierte Dokumentation der einzelnen Projektergebnisse, Entscheidungen und Standards findest du unter [/docs](./docs) auf Deutsch oder auf Englisch.
 
 
 ## Starten des Projektes
@@ -49,9 +49,7 @@ Um die Komponente im eigenen Projekt verwenden zu können, muss eine [Vue](https
 Hierfür muss die [Vue.js](https://awesomejs.dev/for/vue/pkg/245043713989935618/) Bibliothek als Dependency eingefügt und installiert werden.
 
 ## Contribute
-Möchtest du an dem Projekt mitwirken, empfehlen wir dir Kontakt zum [Projektteam](#das-team) aufzunehmen. Alle benötigen Anleitungen und Beschreibungen der Standards, auf die wir uns im Team geeinigt haben, findest du im  [/docs](./docs/README.md) Verzeichnis. 
-Solltest du daneben Hilfe bei der Verwendung des Projektes benötigen, so empfehlen wir dir zunächst einen Blick im [User-Guide](./docs/003_User-Guide.md). 
-Zusätzlich stehen dir [FAQ](./docs/004_FAQ.md) zur Verfügung, wo du Antworten auf die meist gestellten Fragen finden kannst.
+Möchtest du an dem Projekt mitwirken, empfehlen wir dir Kontakt zum [Projektteam](#das-team) aufzunehmen. Alle benötigen Anleitungen und Beschreibungen der Standards, auf die wir uns im Team geeinigt haben, findest du im  [/docs](./docs) Verzeichnis auf Deutsch oder auf Englisch. 
 
 ### Termine
 
